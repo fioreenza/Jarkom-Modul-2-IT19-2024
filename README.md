@@ -4,8 +4,9 @@
 |--------------------|-------------|
 | Fiorenza Adelia Nalle | 5027231053 |
 
-Topologi
-![Uploading Screenshot 2024-10-03 180456.png…]()
+## Topologi
+
+![Screenshot 2024-10-03 180507](https://github.com/user-attachments/assets/cb62fd28-f6a0-489e-b28f-edcbf7d96fc8)
 
 
 1. Untuk mempersiapkan peperangan World War MMXXIV (Iya sebanyak itu), **Sriwijaya** membuat dua kotanya menjadi web server yaitu **Tanjungkulai,** dan **Bedahulu**, serta **Sriwijaya** sendiri akan menjadi DNS Master. Kemudian karena merasa terdesak, **Majapahit** memberikan bantuan dan menjadikan kerajaannya (**Majapahit)** menjadi **DNS Slave**.

@@ -4,11 +4,34 @@
 |--------------------|-------------|
 | Fiorenza Adelia Nalle | 5027231053 |
 
+## Daftar Isi
+
+1. [Soal 1](#soal-1)
+2. [Soal 2](#soal-2)
+3. [Soal 3](#soal-3)
+4. [Soal 4](#soal-4)
+5. [Soal 5](#soal-5)
+6. [Soal 6](#soal-6)
+7. [Soal 7](#soal-7)
+8. [Soal 8](#soal-8)
+9. [Soal 9](#soal-9)
+10. [Soal 10](#soal-10)
+11. [Soal 11](#soal-11)
+12. [Soal 12](#soal-12)
+13. [Soal 13](#soal-13)
+14. [Soal 14](#soal-14)
+15. [Soal 15](#soal-15)
+16. [Soal 16](#soal-16)
+17. [Soal 17](#soal-17)
+18. [Soal 18](#soal-18)
+19. [Soal 19](#soal-19)
+20. [Soal 20](#soal-20)
+
 ## Topologi
 
 ![Screenshot 2024-10-03 180507](https://github.com/user-attachments/assets/cb62fd28-f6a0-489e-b28f-edcbf7d96fc8)
 
-
+## Soal 1 
 1. Untuk mempersiapkan peperangan World War MMXXIV (Iya sebanyak itu), **Sriwijaya** membuat dua kotanya menjadi web server yaitu **Tanjungkulai,** dan **Bedahulu**, serta **Sriwijaya** sendiri akan menjadi DNS Master. Kemudian karena merasa terdesak, **Majapahit** memberikan bantuan dan menjadikan kerajaannya (**Majapahit)** menjadi **DNS Slave**.
 
 Nusantara (Router) :
@@ -148,7 +171,8 @@ netmask 255.255.255.0
 
 dan tambahkan up echo nameserver 192.168.122.1 > /etc/resolv.conf ke setiap node lain
 
-2 .  Karena para pasukan membutuhkan koordinasi untuk melancarkan serangannya, maka buatlah sebuah domain yang mengarah ke **Solok** dengan alamat **sudarsana.xxxx.com** dengan alias **www.sudarsana.xxxx.com,** dimana **xxxx** merupakan kode kelompok. Contoh: **sudarsana.it01.com**.
+## Soal 2
+2.  Karena para pasukan membutuhkan koordinasi untuk melancarkan serangannya, maka buatlah sebuah domain yang mengarah ke **Solok** dengan alamat **sudarsana.xxxx.com** dengan alias **www.sudarsana.xxxx.com,** dimana **xxxx** merupakan kode kelompok. Contoh: **sudarsana.it01.com**.
 
 Jalankan di Sriwijaya
 
@@ -205,6 +229,8 @@ www     IN      CNAME   sudarsana.it19.com.
 service bind9 restart
 ```
 
+## Soal 3
+
 3.  Para pasukan juga perlu mengetahui mana titik yang akan diserang, sehingga dibutuhkan domain lain yaitu **pasopati.xxxx.com** dengan alias **www.pasopati.xxxx.com** yang **mengarah ke Kotalingga**.
 
 Jalankan di Sriwijaya
@@ -250,6 +276,8 @@ www     IN      CNAME   pasopati.it19.com.
 service bind9 restart
 ```
 
+## Soal 4
+
 4.  Markas pusat meminta dibuatnya domain khusus untuk menaruh informasi persenjataan dan suplai yang tersebar. Informasi dan suplai meme terbaru tersebut **mengarah ke Tanjungkulai** dan domain yang ingin digunakan adalah **rujapala.xxxx.com** dengan alias **www.rujapala.xxxx.com**
 
 Jalankan di Sriwijaya
@@ -294,6 +322,8 @@ www     IN      CNAME   rujapala.it19.com.
 ```jsx
 service bind9 restart
 ```
+
+## Soal 5
 
 5. Pastikan domain-domain tersebut dapat diakses oleh **seluruh komputer (client)** yang berada di **Nusantara**.
 
@@ -354,6 +384,8 @@ ping [pasopati.it19.com](http://pasopati.it19.com/) -c 5
 
 ![Screenshot 2024-10-01 164543.png](Screenshot_2024-10-01_164543.png)
 
+## Soal 6
+
 6. Beberapa daerah memiliki keterbatasan yang menyebabkan **hanya dapat** mengakses domain secara langsung melalui **alamat IP** domain tersebut. Karena daerah tersebut tidak diketahui secara spesifik, pastikan semua komputer (client) dapat mengakses domain **pasopati.xxxx.com** melalui **alamat IP Kotalingga** (Notes: menggunakan pointer record).
 
 IP Kotalingga adalah 10.73.1.6
@@ -410,6 +442,8 @@ host -t PTR 10.73.1.6
 ![Screenshot 2024-10-03 150819.png](Screenshot_2024-10-03_150819.png)
 
 ![Screenshot 2024-10-03 150824.png](Screenshot_2024-10-03_150824.png)
+
+## Soal 7
 
 7. Akhir-akhir ini seringkali terjadi **serangan brainrot** ke DNS Server Utama, sebagai tindakan antisipasi kamu diperintahkan untuk membuat **DNS Slave di Majapahit** untuk **semua domain** yang sudah dibuat sebelumnya yang mengarah ke **Sriwijaya**.
 
@@ -512,6 +546,8 @@ ping [pasopati.it19.com](http://pasopati.it19.com/) -c 5
 
 ![Screenshot 2024-10-01 230828.png](Screenshot_2024-10-01_230828.png)
 
+## Soal 8
+
 8. Kamu juga diperintahkan untuk membuat subdomain khusus melacak kekuatan tersembunyi **di Ohio** dengan subdomain **cakra.sudarsana.xxxx.com** yang mengarah ke Bedahulu.
 
 Pada Sriwijaya
@@ -555,6 +591,8 @@ ping cakra.sudarsana.it19.com
 ![Screenshot 2024-10-01 232140.png](Screenshot_2024-10-01_232140.png)
 
 ![image.png](image.png)
+
+## Soal 9
 
 9. Karena terjadi serangan DDOS oleh shikanoko nokonoko koshitantan (NUN), sehingga sistem komunikasinya terhalang. Untuk melindungi warga, kita diperlukan untuk membuat sistem peringatan dari siren man oleh Frekuensi Freak dan memasukkannya ke subdomain **panah.pasopati.xxxx.com** dalam folder panah dan pastikan dapat diakses secara mudah dengan menambahkan alias **www.panah.pasopati.xxxx.com** dan mendelegasikan subdomain tersebut ke **Majapahit** dengan alamat IP menuju radar di **Kotalingga**.
 
@@ -630,6 +668,8 @@ ping panah.pasopati.it19.com
 
 ![Screenshot 2024-10-01 235340.png](Screenshot_2024-10-01_235340.png)
 
+## Soal 10
+
 10. Markas juga meminta catatan kapan saja meme brain rot akan dijatuhkan, maka buatlah subdomain baru di subdomain panah yaitu **log.panah.pasopati.xxxx.com** serta aliasnya **www.log.panah.pasopati.xxxx.com** yang juga mengarah ke **Kotalingga.**
 
 Pada Majapahit
@@ -673,6 +713,8 @@ ping log.panah.pasopati.it19.com
 
 ![Screenshot 2024-10-02 000426.png](Screenshot_2024-10-02_000426.png)
 
+## Soal 11
+
 11. Setelah pertempuran mereda, warga IT dapat kembali mengakses jaringan luar dan menikmati meme brainrot terbaru, tetapi hanya warga Majapahit saja yang dapat mengakses jaringan luar secara langsung. Buatlah konfigurasi agar warga IT yang berada diluar Majapahit dapat mengakses jaringan luar melalui DNS Server Majapahit.
 
 Pada DNS Majapahit
@@ -711,6 +753,8 @@ ping google.com
 ![Screenshot 2024-10-02 001943.png](Screenshot_2024-10-02_001943.png)
 
 ![Screenshot 2024-10-02 002008.png](Screenshot_2024-10-02_002008.png)
+
+## Soal 12
 
 12. Karena pusat ingin sebuah laman web yang ingin digunakan untuk memantau kondisi kota lainnya maka deploy laman web ini (cek resource yg lb) pada **Kotalingga** menggunakan **apache.**
 
@@ -784,6 +828,8 @@ lynx 10.73.1.6/index.php
 ```
 
 ![Screenshot 2024-10-03 002550.png](Screenshot_2024-10-03_002550.png)
+
+## Soal 13
 
 13. Karena Sriwijaya dan Majapahit memenangkan pertempuran ini dan memiliki banyak uang dari hasil penjarahan (sebanyak 35 juta, belum dipotong pajak) maka pusat meminta kita memasang load balancer untuk membagikan uangnya pada web nya, dengan **Kotalingga, Bedahulu, Tanjungkulai** sebagai worker dan **Solok** sebagai **Load Balancer** menggunakan apache sebagai web server nya dan load balancer nya.
 
@@ -918,6 +964,8 @@ lynx 10.73.1.6:8080/index.php
 ```
 
 ![Screenshot 2024-10-03 004621.png](Screenshot_2024-10-03_004621.png)
+
+## Soal 14
 
 14. Selama melakukan penjarahan mereka melihat bagaimana web server luar negeri, hal ini membuat mereka iri, dengki, sirik dan ingin flexing sehingga meminta agar web server dan load balancer nya **diubah menjadi nginx**.
 
@@ -1076,6 +1124,8 @@ lynx 10.73.1.6:8084/index.php
 
 ![Screenshot 2024-10-03 011518.png](Screenshot_2024-10-03_011518.png)
 
+## Soal 15
+
 15. Markas pusat meminta **laporan hasil benchmark** dengan menggunakan apache benchmark dari load balancer dengan 2 web server yang berbeda tersebut dan meminta secara detail dengan ketentuan:
 - Nama Algoritma Load Balancer
 - Report hasil testing apache benchmark
@@ -1104,6 +1154,8 @@ ab -n 1000 -c 100 https://10.73.2.3/
 ![Screenshot 2024-10-03 015024.png](Screenshot_2024-10-03_015024.png)
 
 ![Screenshot 2024-10-03 015142.png](Screenshot_2024-10-03_015142.png)
+
+## Soal 16
 
 16. Karena dirasa kurang aman dari brainrot karena masih memakai IP, markas ingin akses ke **Solok** memakai **solok.xxxx.com** dengan alias **www.solok.xxxx.com** (sesuai web server terbaik hasil analisis kalian).
 
@@ -1218,6 +1270,8 @@ Pada GajahMada
 
 ![Screenshot 2024-10-03 031613.png](Screenshot_2024-10-03_031613.png)
 
+## Soal 17
+
 17. Agar aman, buatlah konfigurasi agar **solok.xxx.com hanya dapat diakses** melalui **port sebesar π x 10^4 = (phi nya desimal) dan 2000 + 2000 log 10 (10) +700 - π = ?**.
 
 Di loadbalancer
@@ -1284,6 +1338,8 @@ ThomasAlfaEdison
 ![Screenshot 2024-10-03 035605.png](Screenshot_2024-10-03_035605.png)
 
 ![Screenshot 2024-10-03 035612.png](Screenshot_2024-10-03_035612.png)
+
+## Soal 18
 
 18. Apa bila ada yang mencoba mengakses IP solok akan secara otomatis dialihkan ke **www.solok.xxxx.com.**
 
@@ -1382,6 +1438,8 @@ lynx [http://1](http://192.245.2.5:14000/)0.73.2.3:3997
 
 ![Screenshot 2024-10-03 053238.png](Screenshot_2024-10-03_053238.png)
 
+## Soal 19
+
 19. Karena probset sudah kehabisan ide masuk ke **salah satu** worker buatkan akses direktori listing yang mengarah ke resource worker2.
 
 Pada salah satu webserver, disini saya menggunakan Kotalingga
@@ -1445,6 +1503,8 @@ lynx 10.73.1.6/worker2
 ![image.png](image%203.png)
 
 ![image.png](image%204.png)
+
+## Soal 20
 
 20. Worker tersebut harus dapat di akses dengan **sekiantterimakasih.xxxx.com** dengan alias **www.sekiantterimakasih.xxxx.com.**
 

@@ -373,9 +373,9 @@ up echo nameserver 10.73.2.2  >> /etc/resolv.conf
 Lalu  test di setiap client
 
 ```jsx
-ping [sudarsana.it19.com](http://sudarsana.it19.com/) -c 5
-ping [rujapala.it19.com](http://rujapala.it19.com/) -c 5
-ping [pasopati.it19.com](http://pasopati.it19.com/) -c 5
+ping sudarsana.it19.com -c 5
+ping rujapala.it19.com -c 5
+ping pasopati.it19.com -c 5
 ```
 
 ![Screenshot 2024-10-01 164335.png](Screenshot_2024-10-01_164335.png)

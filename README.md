@@ -454,21 +454,21 @@ nano /etc/bind/named.conf.local
 ```
 
 ```jsx
-zone "[sudarsana.it19.com](http://sudarsana.it19.com/)" {
+zone "sudarsana.it19.com" {
 		type master;
 		also-notify { 10.73.2.2; }; // IP Majapahit
 		allow-transfer { 10.73.2.2; }; // IP Majapahit
 		file "/etc/bind/it19/sudarsana.it19.com";
 };
 
-zone "[pasopati.it19.com](http://pasopati.it19.com/)" {
+zone "pasopati.it19.com" {
 		type master;
 		also-notify { 10.73.2.2; }; // IP Majapahit
 		allow-transfer { 10.73.2.2; }; // IP Majapahit
 		file "/etc/bind/it19/pasopati.it19.com";
 };
 
-zone "[rujapala.it19.com](http://rujapala.it19.com/)" {
+zone "rujapala.it19.com" {
 		type master;		
 		also-notify { 10.73.2.2; }; // IP Majapahit
 		allow-transfer { 10.73.2.2; }; // IP Majapahit
@@ -503,19 +503,19 @@ nano /etc/bind/named.conf.local
 ```
 
 ```jsx
-zone "[sudarsana.it19.com](http://sudarsana.it19.com/)" {
+zone "sudarsana.it19.com" {
 		type slave;
 		masters { 10.73.1.3; }; //IP Sriwijaya
 		file "/var/lib/bind/sudarsana.it19.com";
 };
 
-zone "[pasopati.it19.com](http://pasopati.it19.com/)" {
+zone "pasopati.it19.com" {
 		type slave;
 		masters { 10.73.1.3; }; //IP Sriwijaya
 		file "/var/lib/bind/pasopati.it19.com";
 };
 
-zone "[rujapala.it19.com](http://rujapala.it19.com/)" {
+zone "rujapala.it19.com" {
 		type slave;
 		masters { 10.73.1.3; }; //IP Sriwijaya
 		file "/var/lib/bind/rujapala.it19.com";
@@ -535,9 +535,9 @@ service bind9 restart
 Testingnya pas Sriwijaya di matiin dan nyala hanya di Majapahit saat di ping di client tetap bisa
 
 ```jsx
-ping [sudarsana.it19.com](http://sudarsana.it19.com/) -c 5
-ping [rujapala.it19.com](http://rujapala.it19.com/) -c 5
-ping [pasopati.it19.com](http://pasopati.it19.com/) -c 5
+ping sudarsana.it19.com -c 3
+ping rujapala.it19.com -c 3
+ping pasopati.it19.com -c 3
 ```
 
 ![Screenshot 2024-10-01 230953.png](Screenshot_2024-10-01_230953.png)

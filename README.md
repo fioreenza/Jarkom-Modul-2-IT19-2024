@@ -1398,7 +1398,7 @@ upstream backend {
 }
 
 server {
-    listen 3997;
+    listen 4697;
     listen 31416;
     server_name solok.it19.com www.solok.it19.com; 
 

@@ -656,6 +656,11 @@ www     IN      CNAME   panah.pasopati.it19.com.
 service bind9 restart
 ```
 
+Pada Sriwijaya
+```
+service bind9 stop
+```
+
 Test ping pada tiap client
 
 ```jsx

@@ -1310,7 +1310,7 @@ service nginx reste
 Testing di client
 
 ```jsx
-lynx solok.it19.com:3997
+lynx solok.it19.com:4697
 lynx solok.it19.com:31416
 ```
 
